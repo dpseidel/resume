@@ -2,7 +2,7 @@
 
 My resume adjusting the Deedy One Page Two Column template
 
-Author: Dana Seidel (https://danaseidel.com)
+Author: Dana Seidel (https://www.danaseidel.com)
 
 Significant changes have been made to the original template
 including but not limited to:

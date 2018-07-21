@@ -1,0 +1,204 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Current template author:
+% Dana Seidel (danaseidel.com)
+% 
+% SIGNIFICANT CHANGES HAVE BEEN MADE TO THE ORIGINAL TEMPLATE
+% including but not limited to:
+% % inclusion of fontawesome icons
+% % movement of AWARDS section
+% % addition of a short bio and creation of a CONTACT section
+%
+%%%%%%%%%%%%%%%%%%%%%
+% ORIGINAL TEMPLATE INFO
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original Template author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original Template repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{}{Dana Paige Seidel}{
+National Science Foundation Data Science Fellow \& UC Berkeley PhD Candidate with 10 years experience in data wrangling and statistical modeling in R specifically for spatial and time series data.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.32\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Contact
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Contact} 
+\href{mailto:dpseidel@berkeley.edu}{\faEnvelope \hspace{2pt} dpseidel@berkeley.edu} \\
+\href{https://www.danaseidel.com}{\faGlobe \hspace{2pt} https://www.danaseidel.com}\\
+\faPhone \hspace{2pt} 612.232.6708 \hspace{2pt}  \href{https://twitter.com/dpseidel}{\faTwitter \hspace{1pt} @dpseidel} \\
+\href{https://github.com/dpseidel}{\faGithub \hspace{2pt} dpseidel} \hspace{2pt}
+\href{https://stackoverflow.com/users/9995814/dpseidel}{\faStackOverflow \hspace{2pt} dpseidel} \hspace{2pt}
+\href{https://www.linkedin.com/in/dana-seidel/}{\faLinkedinSquare \hspace{2pt} dana-seidel} 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education} 
+\subsection{University of \\California, Berkeley}
+\descript{PhD in Environmental Science, Policy, \& Management}
+\location{Expected May 2019 | Berkeley, CA}
+\sectionsep
+
+\subsection{University of Alberta}
+\descript{MSc in Biological Sciences}
+\location{Aug 2014 | Edmonton, AB, Canada}
+Concentration in Ecology \\
+\sectionsep
+
+\subsection{Cornell University}
+\descript{BSc in Natural Resources}
+\location{May 2011 | Ithaca, NY}
+Concentration in Applied Ecology \\
+College of Agriculture and Life Sciences \\
+Graduated \textit{cum laude}
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     LINKS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Links} 
+% \faGithub \hspace{2pt} \href{https://github.com/dpseidel}{\custombold{dpseidel}} \\
+% \faStackOverflow \hspace{2pt} \href{https://stackoverflow.com/users/9995814/dpseidel}{\custombold{dpseidel}} \\
+% \faGraduationCap \hspace{2pt} \href{https://scholar.google.com/citations?user=0BKLXCUAAAAJ}{\custombold{D.P. Seidel}} \\
+% \faLinkedinSquare \hspace{2pt} \href{https://www.linkedin.com/in/dana-seidel/}{\custombold{dana-seidel}} 
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\textbullet{} R \textbullet{} Data Analysis \textbullet{} Tidyverse \\\textbullet{} geospatial analysis (R, Python, ArcGIS) \\\textbullet{} Version Control, Git/Github \\\textbullet{} Open Science \textbullet{} SQL \\\textbullet{} Data Visualization \textbullet{} Biostatistics \\\textbullet{} Regression Analysis \\\textbullet{} Experimental Design \textbullet{} Teaching \\\textbullet{} RMarkdown \textbullet{} Shiny \\\textbullet{} Open Source Development in R \\ \textbullet{} Webpage development
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Awards
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+
+\textbullet{} Data Science for the 21st Century: National Science Foundation Research Traineeship (\$32K, 2015-2017) \\
+\textbullet{} Outstanding Graduate Student Instructor Award, UC Berkeley 2018\\
+\textbullet{} Letter of Commendation for Excellence in Teaching, Univ. of Alberta 2012\\
+% \textbullet{} MEC Community Involvement Research Award (\$18K) 
+% \textbullet{} Alberta Emerald Foundation Shared Footprints Award 2013
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Awards
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications}
+For full list of my publications, please see \href{https://scholar.google.com/citations?user=0BKLXCUAAAAJ}{Google Scholar \faGraduationCap} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{RStudio}
+\descript{| Software Development Intern \textbullet{} Tidyverse Team }
+\location{June 2018 – Aug 2018 | Remote}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Participated in open source R development for `ggplot2` (486K downloads/month) and `scales` packages
+\item Learned the internals of a large existing codebase to resolve issues, submit bug fixes, add new features, write tests, and update documentation to provide better functionality for user-defined scales, themes, and aesthetics manipulation during data visualization in R. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Google}
+\descript{| Quantitative Analyst Intern \textbullet{} GeoDataAnalytics}
+\location{May 2016 – Aug 2016 | Mountain View, CA}
+\begin{tightemize}
+\item Explored impressions data for millions of features in the Google Maps database using Dremel, R
+\item Assessed average time to impressions maturity for novel business features using hazard models.
+\item Fit mixed effect regression models and evaluated model capacity for predicting impressions of novel business features in 4 cities across US and India based upon spatial relations with mature features
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\descript{Elephants  }
+\location{Aug 2014 – Present} 
+
+\descript{CWD  | UC Berkeley}
+\location{Aug 2016 – Present} 
+
+\descript{Southwest Alberta Montane Research Project}
+\location{Aug 2011 – Aug 2014} 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Teaching
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Teaching}
+\descript{Visiting Instructor | Hong Kong University} \location{January 2018 | Hong Kong, China}
+ Co-developed and led an 8-day workshop teaching ecological methods of spatial and movement analysis in R and RStudio. \urlstyle{same}\url{https://danaseidel.com/MovEco-R-Workshop/}
+ %\sectionsep
+\vspace{4pt}
+
+\descript{Data Science Instructor | UC Berkeley} \location{Fall 2017 - Spring 2018 | Berkeley, CA}
+ Taught upper division course teaching collaborative \& reproducible data science including programming in R \& RStudio, relational databases, data management, version control, remote data and APIs, cloud computing, and R Markdown.
+%\sectionsep
+\vspace{4pt}
+
+\descript{Biostatistics Instructor | UC Berkeley}	 \location{Fall 2015 | Berkeley, CA}
+Taught upper division biostatistics course including basic hypothesis testing, probability, experimental design, linear models, and programming in R \& RStudio.
+\end{minipage} 
+\end{document}  \documentclass[]{article}

@@ -1,16 +1,20 @@
 # A latex resume template
 
-My resume adjusting the Deedy One Page Two Column template
+My resume adjusting the Deedy One Page Two Column template. A preview image:
 
-Author: Dana Seidel (https://www.danaseidel.com)
+![](sample.png)
+
+Link to Current Version: https://www.danaseidel.com/resume.pdf
 
 Significant changes have been made to the original template
 including but not limited to:
+
 - inclusion of fontawesome icons
 - movement of AWARDS section
 - addition of a short bio and creation of a CONTACT section
 
 Feel free to use and distribute according to the original license (included in this repo).
+
 
 ### ORIGINAL TEMPLATE INFO
 Deedy - One Page Two Column Resume

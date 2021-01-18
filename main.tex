@@ -28,7 +28,6 @@
 % operating system or comment the line out to use the default font.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \documentclass[]{deedy-resume-openfont}
 
 \begin{document}
@@ -38,6 +37,7 @@
 %     LAST UPDATED DATE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\texticons
 \lastupdated
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -46,9 +46,10 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\namesection{}{Dana Paige Seidel}{
-National Science Foundation Data Science Fellow \& UC Berkeley PhD Candidate with 10 years experience in data wrangling and statistical modeling in R specifically for spatial and time series data. Contributor to the popular ggplot2 package \& co-author of scales package. Available full-time as of summer 2019.}
-
+\namesection{}{Dana Paige Seidel}
+%{National Science Foundation Data Science Fellow \& UC Berkeley PhD Candidate with 10 years experience in data wrangling and statistical modeling in R specifically for spatial \& time series data. Specialized in geospatial analysis in R and Python, including analysis and manipulation of remotely sensed imagery. Available full-time as of summer 2019.}
+% National Science Foundation Data Science Fellow \& UC Berkeley PhD Candidate with 10 years experience in data wrangling and statistical modeling in R specifically for spatial and time series data. Contributor to the popular ggplot2 package \& co-author of scales package. Available full-time as of summer 2019.}
+{Senior Data Scientist with 10 years experience in data wrangling and statistical modeling specifically for spatial and time series data.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN ONE
@@ -62,11 +63,11 @@ National Science Foundation Data Science Fellow \& UC Berkeley PhD Candidate wit
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Contact} 
 \href{mailto:dana.seidel@gmail.com}{\faEnvelope{ dana.seidel@gmail.com}} \\
-\href{https://www.danaseidel.com}{\faGlobe{ https://www.danaseidel.com}}\\
+%\href{https://www.danaseidel.com}{\faGlobe{ https://www.danaseidel.com}}\\
 \faPhone{ 612.232.6708} \hspace{2pt} 
 \href{https://twitter.com/dpseidel}{\faTwitter{ @dpseidel}} \\
 \href{https://github.com/dpseidel}{\faGithub{ dpseidel}} \hspace{2pt}
-\href{https://stackoverflow.com/users/9995814/dpseidel}{\faStackOverflow{ dpseidel}} \hspace{2pt}
+%\href{https://stackoverflow.com/users/9995814/dpseidel}{\faStackOverflow{ dpseidel}} \hspace{2pt}
 \href{https://www.linkedin.com/in/dana-seidel/}{\faLinkedinSquare{ dana-seidel}} 
 \sectionsep
 
@@ -76,7 +77,7 @@ National Science Foundation Data Science Fellow \& UC Berkeley PhD Candidate wit
 \section{Education} 
 \subsection{University of California, Berkeley}
 \descript{PhD in Environmental Science, Policy, \& Management}
-\location{Expected May 2019 | Berkeley, CA}
+\location{July 2019 | Berkeley, CA}
 \sectionsep
 
 \subsection{University of Alberta}
@@ -98,7 +99,19 @@ Graduated \customit{cum laude}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
-\textbullet{} R \textbullet{} Data Analysis \textbullet{} Tidyverse \\\textbullet{} Geospatial Analysis (R, Python, ArcGIS) \\\textbullet{} Version Control, Git/Github \\\textbullet{} Data Visualization \textbullet{} Biostatistics \\\textbullet{} Regression Analysis \textbullet{} Open Science \\\textbullet{} Experimental Design \textbullet{} Teaching \\\textbullet{} R Markdown \textbullet{} LaTeX \textbullet{} Shiny \\\textbullet{} Open Source Development in R \\ \textbullet{} Web Development \textbullet{} SQL 
+ \textbullet{} Data Analysis \textbullet{} R \textbullet{} Tidyverse
+ \\\textbullet{} Geospatial Analysis (R, Python, ArcGIS) 
+ \\\textbullet{} Biostatistics \textbullet{} Regression Analysis 
+ \\\textbullet{} Experimental Design \textbullet{} SQL
+ \\\textbullet{} Stitch \textbullet{} Sisense (PeriscopeData) 
+ \\\textbullet{} Data Visualization  \textbullet{} R Shiny
+ \\\textbullet{} DBT (data-build-tool)
+ \\\textbullet{} Python (numpy, pandas, pymc3)
+ \\\textbullet{} Open Source Development in R 
+ \\\textbullet{} Version Control, Git/Github 
+ \\\textbullet{} Testing \& Continuous Integration
+ \\\textbullet{} Teaching \textbullet{} R Markdown \textbullet{} LaTeX 
+% \\\textbullet{} Open Science %\textbullet{} Web Development 
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -107,11 +120,11 @@ Graduated \customit{cum laude}
 
 \section{Awards}
 
-\textbullet{} Data Science for the 21st Century: National Science Foundation Research Traineeship (\$32K, 2015-2017) \\
+\textbullet{} Data Science for the 21st Century: National Science Foundation Research Traineeship \href{http://ds421.berkeley.edu}{\faGlobe} \\
 \textbullet{} Outstanding Graduate Student Instructor Award, UC Berkeley 2018\\
 \textbullet{} Letter of Commendation for Excellence in Teaching, Univ. of Alberta 2012\\
-% \textbullet{} MEC Community Involvement Research Award (\$18K) 
-% \textbullet{} Alberta Emerald Foundation Shared Footprints Award 2013
+%%\textbullet{} MEC Community Involvement Research Award (\$18K)\\ 
+%%\textbullet{} Alberta Emerald Foundation Shared Footprints Award 2013
 \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Awards
@@ -134,25 +147,36 @@ For full list of my publications, please see \href{https://scholar.google.com/ci
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Experience}
+\section{Work Experience}
+
+\runsubsection{Plenty}
+\descript{| \href{https://github.com/dseidel-plenty}{Senior Data Scientist \faGithub} \textbullet{} Data Science \& Metrology}
+\location{ July 2019 - Present | South San Francisco, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Build, maintain, test, and surface Plenty's core reporting data, leveraging a modern data science pipeline including Stitch, Snowflake data warehouseing, DBT, \& Sisense
+\item Aggregate multiple data streams from a production farm (e.g. environmental signals, material traceability, equipment performance, farm imagery) to develop complex derived features and metrics for downstream models, alerting, and business users
+\item Build and deploy statistical models in R and Python to create novel data streams, characterize system performance and health, and predict harvest yield
+\end{tightemize}
+\sectionsep
 
 \runsubsection{RStudio}
-\descript{| Software Development Intern \textbullet{} Tidyverse Team}
+\descript{| Software Development Intern \textbullet{} Tidyverse}
 \location{June 2018 – Aug 2018 | Remote}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Participated in open source R development for \href{https://github.com/tidyverse/ggplot2}{ggplot2 \faGithub{}} (486K downloads/month) and \href{https://github.com/r-lib/scales}{scales \faGithub} packages
-\item Learned the internals of a large existing codebase to resolve issues, submit bug fixes, add new features, write tests, and update documentation to provide better functionality for user-defined scales, themes, and aesthetics manipulation during data visualization in R. 
+\item Full-time developer of widely-used open source R packages for data visualization, \href{https://github.com/tidyverse/ggplot2}{ggplot2 \faGithub{}} (486K downloads/month) and \href{https://github.com/r-lib/scales}{scales \faGithub}
+\item Worked within large existing codebases to resolve issues, submit bug fixes, add new features, write unit tests, and update documentation to provide increased functionality for user-defined scales, themes, and aesthetic manipulation for data visualization in R
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Google}
-\descript{| Quantitative Analyst Intern \textbullet{} GeoData Analytics Team}
+\descript{| Quantitative Analyst Intern \textbullet{} GeoData Analytics}
 \location{May 2016 – Aug 2016 | Mountain View, CA}
 \begin{tightemize}
-\item Explored impressions data for millions of features in the Google Maps database using Dremel, R
-\item Assessed average time to impressions maturity for novel business features using hazard models.
-\item Fit mixed effect regression models and evaluated model capacity for predicting impressions of novel business features based upon spatial relations with mature features.
+\item Queried, manipulated, and analysed mobile and web generated user-impressions data for tens of millions of Google Maps features %% using SQL-like syntax (Dremel) \& R
+\item Built and evaluated predictive regression models for average time to ``maturity" of user-interactions with novel business features
+\item Fit spatially-implicit mixed effect regression models and evaluated model capacity for predicting user-interaction with novel business features
 \end{tightemize}
 \sectionsep
 
@@ -160,40 +184,68 @@ For full list of my publications, please see \href{https://scholar.google.com/ci
 %     RESEARCH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Research}
-\descript{Graduate Student Researcher | UC Berkeley % \href{https://ourenvironment.berkeley.edu/people/dana-seidel}{\faGlobe}
-}
+\section{Project Experience}
+\descript{Graduate Student Researcher | UC Berkeley}
 \location{} % adjusts the text size below to match
 \begin{tightemize}
-% \item Combined, cleaned, \& analyzed spatial temporal time series data from 39 collared elephants, 2M cleaned GPS samples.
-\item Developed an R package to streamline best practices in exploratory data analysis for animal movement data.
-\item Developed an R Shiny application for updating spatial risk maps of infectious disease using rare events logistic regression \& spatial libraries in Python and R. \href{https://fw-habitat-aep.shinyapps.io/ABCWD_Shiny/}{\faGlobe} \href{https://github.com/dpseidel/ABCWD_Shiny}{\faGithub}
-\item Built spatiotemporal models estimating disease prevalence and spread using a hierarchical Bayesian framework in WinBUGs and R.\\
+\item Developed a R package to streamline best practices and automated report building for exploratory data analysis of telemetry data
+\href{https://www.danaseidel.com/stmove}{\faGlobe} %\href{https://github.com/dpseidel/stmove}{\faGithub}
+%\item Combined, cleaned, \& analyze spatial temporal time series data on across multi species studies.
+%\item downloaded, extracted, and analysed massive numbers of MODIS and LandSat satellite imagery. Tasseled-cap transformations. ERDAS Imagine and ArcGIS capable. 
+%\item Developed a system in R for standardizing fix-rate of large datasets of terrestrial and marine movement telemetry data 
+\item Analyzed multi-banded MODIS and LandSat imagery to understand environmental context of animal movement data
+% \item Conducted principal components analysis and k-means clustering on results from agent-based simulations
+% \item Used high-capacity distributed computing cluster to execute long-running analyses in parallel
+%\item Investigated dyadic interaction across simultaneous spatial time series. 
+%\item Simulated animal movement paths using bounded and non-bounded random walk models drawing from empirical distributions. 
+%\item Built an agent based model for forecasting disease spread across a spatially and temporally dynamic landscape and the movement and infective state of a dynamic population. 
+% Modelled disease dynamics for malaria and cholera using stochastic differential equations
+% Compared the merits of available movement analyses for identifying behaviors from GPS relocations in R
+% NSF Ecology and Evolution of Infectious Disease Project: Anthrax		
+% Actively collaborate with 9 other researchers in 3-institution comparative study of Anthrax risk in Montana and Etosha National Park, Namibia.
+% Designed resource and step selection models in R and ArcGIS  incorporating mortality, environmental, and movement data collected in Namibia
+% Mapped landscape level anthrax risk via ecological niche modeling with DesktopGARP (Genetic Algorithms for Rule-Set Production)
 \end{tightemize}
-\descript{\href{http://www.biology.ualberta.ca/www.montaneelk.com/index.php}{Southwest Alberta Montane Research Project \faGlobe}}
+
+\descript{Modeling Chronic Wasting Disease | Alberta Fish \& Wildlife} 
 \location{} % adjusts the text size below to match
 \begin{tightemize}
-\item Designed database and analysis flow for foraging \& movement data from 182 radio-collared elk - totaling 856K cleaned GPS samples.
+\item Built an R Shiny application with infrastructure to load raw data, extract environmental covariates from rasters, model and map spatial risk  \href{https://fw-habitat-aep.shinyapps.io/ABCWD_Shiny/}{\faGlobe} \href{https://github.com/dpseidel/ABCWD_Shiny}{\faGithub}
+\item Used Python (e.g. GeoPandas, Fiona, Shapely, ArcPy) \& R (e.g. sf, raster, velox, mapview) libraries to manipulate spatial raster and vector data for analysis
+\item Built spatiotemporal models estimating disease prevalence and spread using a hierarchical Bayesian framework in WinBUGs and R
+\end{tightemize}
+
+\descript{Southwest Alberta Montane Research Project | U Alberta \href{http://www.biology.ualberta.ca/www.montaneelk.com/index.php}{\faGlobe}}
+\location{} % adjusts the text size below to match
+\begin{tightemize}
+\item Designed relational database and analysis flow for field-collected foraging \& movement data from 182 radio-collared elk
 \item Implemented multivariate regression analyses in R, including mixed negative binomial regression and paired conditional logistic regression 
+% Actively collaborated with team of  15+ researchers across  2 primary universities in a  multi-collaborator program is describing wildlife movements and habitat use in southwest Alberta
+% Collected and analyzed elk movement and foraging data to test theoretical model for forager home-range development
+% Managed and analyzed data from 182 radio-collared elk - totaling 856K cleaned GPS samples.
+% Planned and led 3 person in-field observational study over 6 months including weekly spatio-temporal cluster analysis of movement data for foraging patch identification across 600 sq km 
+% Designed database and analysis flow for foraging data across 14 tracked elk (15K relocations), 209 patches, and their environmental covariates including 345 unique plant species 
+% Implemented multivariate analyses in R, ultimately publishing 2 peer-reviewed papers using mixed negative binomial regression and paired conditional logistic regression.
+% Delivered bi-annual reports to area managers and stakeholders including Royal Dutch Shell Ltd., a major project funder, in addition to 10 public presentations at regional and international academic conferences
 \end{tightemize}
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Teaching
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     Teaching
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Teaching}
-\descript{Visiting Instructor | Hong Kong University} \location{January 2018 | Movement Ecology in R Workshop}
- Co-developed and led an 8-day workshop teaching ecological methods of spatial and movement analysis in R \& RStudio. \href{https://www.danaseidel.com/MovEco-R-Workshop/}{\faGlobe} \href{https://github.com/dpseidel/MovEco-R-Workshop/}{\faGithub} 
- %\sectionsep
-\vspace{4pt}
+% \section{Teaching Experience}
+% \descript{Visiting Instructor | Hong Kong University | January 2018
+%  \href{https://www.danaseidel.com/MovEco-R-Workshop/}{\faGlobe} \href{https://github.com/dpseidel/MovEco-R-Workshop/}{\faGithub} 
+%  }%\location{Movement Ecology in R Workshop}
+% \sectionsep
+% %\vspace{2pt}
 
-\descript{Data Science Instructor | UC Berkeley} \location{Fall 2017 ESPM 157 \textbullet{} Spring 2018 ESPM 288}
- Taught upper division course teaching collaborative \& reproducible data science including programming in R \& RStudio, relational databases, data management, version control, remote data and APIs, cloud computing, \& R Markdown. \href{https://espm-288.carlboettiger.info/}{\faGlobe} \href{https://github.com/ds421}{\faGithub}
-%\sectionsep
-\vspace{4pt}
+% \descript{Data Science Instructor | UC Berkeley | 2017-2018
+%  \href{https://espm-288.carlboettiger.info/}{\faGlobe} \href{https://github.com/ds421}{\faGithub}} 
+% \sectionsep
+% %\vspace{2pt}
 
-\descript{Biostatistics Instructor | UC Berkeley}	 \location{Fall 2015 ESPM 173}
-Taught upper division biostatistics course including basic hypothesis testing, probability, experimental design, linear models, and programming in R \& RStudio.
-\end{minipage} 
-\end{document}  \documentclass[]{article}
+% \descript{Biostatistics Instructor | UC Berkeley | Fall 2015}
+ \end{minipage} 
+ \end{document}  \documentclass[]{article}

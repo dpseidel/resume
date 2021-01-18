@@ -41,6 +41,11 @@
 Last Updated on
 \today
 \end{textblock}}
+% icon definition
+\newcommand{\texticon}{\begin{textblock}{60}(0,0)
+\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
+All icons are hyperlinks
+\end{textblock}}
 
 % Name command
 \newcommand{\namesection}[3]{

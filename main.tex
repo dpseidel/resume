@@ -37,7 +37,7 @@
 %     LAST UPDATED DATE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\texticons
+\texticon
 \lastupdated
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -49,7 +49,7 @@
 \namesection{}{Dana Paige Seidel}
 %{National Science Foundation Data Science Fellow \& UC Berkeley PhD Candidate with 10 years experience in data wrangling and statistical modeling in R specifically for spatial \& time series data. Specialized in geospatial analysis in R and Python, including analysis and manipulation of remotely sensed imagery. Available full-time as of summer 2019.}
 % National Science Foundation Data Science Fellow \& UC Berkeley PhD Candidate with 10 years experience in data wrangling and statistical modeling in R specifically for spatial and time series data. Contributor to the popular ggplot2 package \& co-author of scales package. Available full-time as of summer 2019.}
-{Senior Data Scientist with 10 years experience in data wrangling and statistical modeling specifically for spatial and time series data.}
+{Data Scientist with 10 years experience in data wrangling and statistical modeling applications\\in biology and manufacturing.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN ONE
@@ -62,10 +62,10 @@
 %     Contact
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Contact} 
-\href{mailto:dana.seidel@gmail.com}{\faEnvelope{ dana.seidel@gmail.com}} \\
+%\href{mailto:dana.seidel@gmail.com}{\faEnvelope{ dana.seidel@gmail.com}} \\
 %\href{https://www.danaseidel.com}{\faGlobe{ https://www.danaseidel.com}}\\
-\faPhone{ 612.232.6708} \hspace{2pt} 
-\href{https://twitter.com/dpseidel}{\faTwitter{ @dpseidel}} \\
+%\faPhone{612.232.6708} \hspace{2pt} 
+\href{https://twitter.com/dpseidel}{\faTwitter{ @dpseidel}} %\\
 \href{https://github.com/dpseidel}{\faGithub{ dpseidel}} \hspace{2pt}
 %\href{https://stackoverflow.com/users/9995814/dpseidel}{\faStackOverflow{ dpseidel}} \hspace{2pt}
 \href{https://www.linkedin.com/in/dana-seidel/}{\faLinkedinSquare{ dana-seidel}} 
@@ -102,7 +102,7 @@ Graduated \customit{cum laude}
  \textbullet{} Data Analysis \textbullet{} R \textbullet{} Tidyverse
  \\\textbullet{} Geospatial Analysis (R, Python, ArcGIS) 
  \\\textbullet{} Biostatistics \textbullet{} Regression Analysis 
- \\\textbullet{} Experimental Design \textbullet{} SQL
+ \\\textbullet{} Experimental Design 
  \\\textbullet{} Stitch \textbullet{} Sisense (PeriscopeData) 
  \\\textbullet{} Data Visualization  \textbullet{} R Shiny
  \\\textbullet{} DBT (data-build-tool)
@@ -149,21 +149,37 @@ For full list of my publications, please see \href{https://scholar.google.com/ci
 
 \section{Work Experience}
 
+\runsubsection{Rivian}
+\descript{| Senior Data Scientist \textbullet{} Decision Science - Factory Data}
+\location{ Oct 2021 - Present | Palo Alto, CA}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Support factory ramp and data-driven decision making within Rivian's manufacturing engineering org. 
+\sectionsep
+
+
 \runsubsection{Plenty}
-\descript{| \href{https://github.com/dseidel-plenty}{Senior Data Scientist \faGithub} \textbullet{} Data Science \& Metrology}
-\location{ July 2019 - Present | South San Francisco, CA}
+\descript{| \href{https://github.com/dseidel-plenty}{Staff Data Scientist \faGithub} \textbullet{} Software \& Data}
+\location{ July 2019 - Oct 2021 | South San Francisco, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Build, maintain, test, and surface Plenty's core reporting data, leveraging a modern data science pipeline including Stitch, Snowflake data warehouseing, DBT, \& Sisense
-\item Aggregate multiple data streams from a production farm (e.g. environmental signals, material traceability, equipment performance, farm imagery) to develop complex derived features and metrics for downstream models, alerting, and business users
-\item Build and deploy statistical models in R and Python to create novel data streams, characterize system performance and health, and predict harvest yield
+%\item Build, maintain, and surface Plenty's core reporting data, leveraging a modern data science pipeline including Stitch, Snowflake, DBT, \& Sisense
+\item Aggregate multiple data streams from production farms (e.g. environmental signals, operations, imagery) to develop complex derived features and metrics for downstream models, alerting, and business users
+\item Fit canopy height and harvest yield models in Python (pymc3) to continuously forecast growth curves and expected harvest yield from plant cohorts
+\item Develop and maintain deployed model parsing canopy temperature and detecting hotspots in production images
+%\item Develop and maintain custom R Shiny applications used for monitoring production grow spaces and enabling reliable food safety audits. 
+%\item Provide technical leadership for data scientists across research and production data science teams
+%\item Build and deploy statistical models in R and Python to create novel data streams, characterize system performance and health, and predict harvest yield 
+%\item Environment Social, Governance program - Life Cycle Analysis making decisions and changes regarding nutrient system design and tracking of sustainability metrics
+%\item Corporate Dashboard -- tracking, and visualizing trends for KPIs viewed weekly by directors and executive board. 
+%%\item Seldon core language wrapper to containerize R code and models as REST microservices, deployed in a production environment
 \end{tightemize}
 \sectionsep
+
 
 \runsubsection{RStudio}
 \descript{| Software Development Intern \textbullet{} Tidyverse}
 \location{June 2018 – Aug 2018 | Remote}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Full-time developer of widely-used open source R packages for data visualization, \href{https://github.com/tidyverse/ggplot2}{ggplot2 \faGithub{}} (486K downloads/month) and \href{https://github.com/r-lib/scales}{scales \faGithub}
 \item Worked within large existing codebases to resolve issues, submit bug fixes, add new features, write unit tests, and update documentation to provide increased functionality for user-defined scales, themes, and aesthetic manipulation for data visualization in R
@@ -175,10 +191,10 @@ For full list of my publications, please see \href{https://scholar.google.com/ci
 \location{May 2016 – Aug 2016 | Mountain View, CA}
 \begin{tightemize}
 \item Queried, manipulated, and analysed mobile and web generated user-impressions data for tens of millions of Google Maps features %% using SQL-like syntax (Dremel) \& R
-\item Built and evaluated predictive regression models for average time to ``maturity" of user-interactions with novel business features
+\item Built and evaluated predictive models for average time to ``maturity" of user-interactions with novel business features
 \item Fit spatially-implicit mixed effect regression models and evaluated model capacity for predicting user-interaction with novel business features
 \end{tightemize}
-\sectionsep
+%\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     RESEARCH

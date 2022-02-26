@@ -1,8 +1,6 @@
 # A latex resume template
 
-My resume adjusting the Deedy One Page Two Column template. A preview image:
-
-![](sample.png)
+My resume adjusting the Deedy One Page Two Column template.
 
 Link to Current Version: https://www.danaseidel.com/resume.pdf
 
